@@ -21,6 +21,8 @@ Teknik kayıtlar; uygulama sürümü, cihaz modeli, sahne ve bölüm bilgileri, 
 
 Kayıtlar bağlantı yokken cihazda bekletilebilir. Uzaktan tanılama etkin ve yapılandırılmış sürümlerde internet bağlantısıyla Sentry hizmetine gönderilir. Bu sürümlerde destek kimliği ve cihaz modeli de gönderilir; hizmet sağlayıcı bağlantı sırasında IP adresi gibi ağ verilerini işleyebilir. Yerel olay kuyruğu en fazla 500 olay tutar; yedek ve son reddedilen olay dosyaları da bulunabilir. Bu kayıtlar tüm işlemlerin sınırsız bir arşivi değildir.
 
+Oyun deneyimini geliştirmek için GameAnalytics aracılığıyla takma adlı kullanım analitiği işlenebilir. Bu veriler oturum ve uygulama sürümü bilgilerini; bölüm başlatma, başarısız olma ve tamamlama olaylarını; skor, oynama süresi ve ölüm dalgası gibi oyun ölçümlerini; ayrıca reklam ve uygulama içi satın alma etkileşimlerinin sonucunu içerebilir. Bu analiz, oyuncuların zorlandığı bölümleri, özellik kullanımını ve teknik olmayan terk noktalarını toplu olarak anlamak için kullanılır. Ad, e-posta adresi veya tam ödeme bilgileri GameAnalytics'e gönderilmez.
+
 ### Reklamlar
 
 Oyun, Unity LevelPlay ve Google AdMob aracılığıyla reklam sunabilir. Reklam hizmetleri; cihaz/reklam tanımlayıcıları, IP adresi, yaklaşık konum, uygulama ve cihaz bilgileri, reklam etkileşimleri ve teknik tanılama verilerini reklam sunmak, ölçmek ve kötüye kullanımı önlemek amacıyla işleyebilir. İşlenen veriler cihaz ayarlarına, izin tercihlerinize, bölgenize ve kullanılan reklam ağına göre değişir.
@@ -33,7 +35,7 @@ Gerekli bölgelerde reklam gizliliği tercihleri sorulur. Kullanılabilir olduğ
 
 ### Paylaşım, saklama ve güvenlik
 
-Veriler yukarıdaki amaçlar için Google, Unity ve uzaktan tanılama etkin olduğunda Sentry ile işlenebilir. Destek için e-posta gönderirseniz mesajınız ve eklediğiniz bilgiler talebinizi yanıtlamak için kullanılır. Hizmet sağlayıcılar verileri ülkeniz dışında işleyebilir. Uygulanabilir durumlarda aktarım ve koruma mekanizmaları sağlayıcı politikalarında açıklanır.
+Veriler yukarıdaki amaçlar için Google, Unity, GameAnalytics ve uzaktan tanılama etkin olduğunda Sentry ile işlenebilir. Destek için e-posta gönderirseniz mesajınız ve eklediğiniz bilgiler talebinizi yanıtlamak için kullanılır. Hizmet sağlayıcılar verileri ülkeniz dışında işleyebilir. Uygulanabilir durumlarda aktarım ve koruma mekanizmaları sağlayıcı politikalarında açıklanır.
 
 Cihaz kayıtları uygulama verileri temizlenene, kaldırılana veya ilgili kayıtlar güncellenene kadar kalabilir; Android yedekleme ayarları ek kopyaları etkileyebilir. Uzaktan kayıtlar hizmetin saklama ayarlarına, destek ihtiyacına ve geçerli yasal yükümlülüklere göre tutulur. Verilerin korunması için makul önlemler alınır; hiçbir aktarım veya saklama yöntemi mutlak güvenlik sağlamaz.
 
@@ -57,6 +59,8 @@ Diagnostic records may include app version, device model, scene and level, times
 
 Records can be queued offline. In builds where remote diagnostics are enabled and configured, they are sent to Sentry when connectivity is available, together with the support identifier and device model. Service providers may process network information such as IP addresses during a connection. The local event queue holds up to 500 events; backup and last-rejected-event files may also exist. It is not an unlimited transaction archive.
 
+Pseudonymous usage analytics may be processed through GameAnalytics to improve the game experience. This can include session and app-version information; level start, failure and completion events; gameplay measurements such as score, play duration and defeat wave; and outcomes of advertising and in-app purchase interactions. It is used to understand, in aggregate, where players struggle, which features they use and where they leave the experience for non-technical reasons. Names, email addresses and full payment details are not sent to GameAnalytics.
+
 ### Advertising
 
 The game may show ads through Unity LevelPlay and Google AdMob. Advertising services may process device/advertising identifiers, IP addresses, approximate location, app and device information, ad interactions and diagnostic data to deliver and measure ads and prevent abuse. Data processing varies with device settings, your choices, region and the advertising network used.
@@ -69,7 +73,7 @@ Google Play processes payments. The game developer does not receive your full pa
 
 ### Sharing, retention and security
 
-Information may be processed by Google, Unity and, where remote diagnostics are enabled, Sentry for the purposes above. If you contact support, your message and supplied information are used to respond. Providers may process data outside your country; their policies explain relevant transfer safeguards where applicable.
+Information may be processed by Google, Unity, GameAnalytics and, where remote diagnostics are enabled, Sentry for the purposes above. If you contact support, your message and supplied information are used to respond. Providers may process data outside your country; their policies explain relevant transfer safeguards where applicable.
 
 Local records may remain until app data is cleared, the app is removed or records are updated; Android backup settings may affect additional copies. Remote records are retained according to service retention settings, support needs and applicable legal obligations. Reasonable safeguards are used, but no transmission or storage method guarantees absolute security.
 
@@ -84,3 +88,4 @@ The game is not specifically designed for children. Contact us if you believe a 
 - Google: https://policies.google.com/privacy
 - Unity: https://unity.com/legal/privacy-policy
 - Sentry: https://sentry.io/privacy/
+- GameAnalytics: https://gameanalytics.com/privacy/
